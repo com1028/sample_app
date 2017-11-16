@@ -17,16 +17,18 @@
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
-    <h1>スノーボーダー用情報交換アプリスノーボード.comへようこそ！</h1>
+  <div id="home" class="top-section">
+    <div class="center jumbotron">
+      <h1>スノーボーダー用情報交換アプリスノーボード.comへようこそ！</h1>
 
-    <h2>
-      ここはスノボ好きな人が集まっておすすめウエアや、行ってよかったスキー場について語り合う場所です！
-    </h2>
+      <h2>
+        ここはスノボ好きな人が集まっておすすめウエアや、行ってよかったスキー場について語り合う場所です！
+      </h2>
 
-    <%= link_to "サインアップ", signup_path, class: "btn btn-lg btn-primary" %>
-  </div>
+      <%= link_to "サインアップ", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
 
   <%= link_to image_tag("rails.png", alt: "Rails logo"),
               'http://rubyonrails.org/' %>
+  </div>
 <% end %>
