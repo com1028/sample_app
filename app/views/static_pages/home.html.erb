@@ -19,16 +19,16 @@
 <% else %>
   <div id="home" class="top-section">
     <div class="center jumbotron">
-      <h1>スノーボーダー用情報交換アプリSnowboard.comへようこそ！</h1>
+      <h1><font color="#ff6666" face="Arial Black,ＭＳ Ｐゴシック,sans-serif"><span id="blink8701">Welcome to the Anime.com</span><script>with(blink8701)id='',style.opacity=1,setInterval(function(){style.opacity^=1},500)</script></font></h1>
 
-      <h2>
-        ここはスノボ好きな人が集まっておすすめウエアや、行ってよかったスキー場について語り合う場所です！
+      <h2><font color="#ff6666" face="Arial Black,ＭＳ Ｐゴシック,sans-serif">アニメ好きな人集合！アニメについて語り合おう！</font>
+
       </h2>
 
-      <%= link_to "サインアップ", signup_path, class: "btn btn-lg btn-primary" %>
+      <%= link_to "登録する", signup_path, class: "btn btn-lg btn-primary" %>
+      <%= link_to image_tag("haruhi.jpg", alt: "Rails logo") %>
+
     </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),
-              'suno-bo-do.jpg' %>
   </div>
 <% end %>

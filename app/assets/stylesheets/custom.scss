@@ -65,17 +65,36 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: pink;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: pink;
     text-decoration: none;
   }
 }
-
+// maimpage
+// #users {
+//   background-image: image-url("reinnbo.jpeg");
+//   background-repeat: no-repeat;
+//   background-position: 50% 0;
+//   height: 400px;
+// // }
+// .container{
+//   background-image: image-url("reinnbo.jpeg");
+//   background-repeat: no-repeat;
+//   background-position: 50% 0;
+// }container
+.container{
+background: image-url("gurade.jpg");
+background-size: cover;
+}
+.container-hd{
+background: image-url("ic21.jpeg");
+background-size: cover;
+}
 /* footer */
 
 footer {
