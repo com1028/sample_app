@@ -10,6 +10,12 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+  # 追加機能11/25
+    def index
+      @users = User.where(activated: true).paginate(page: params[:page]).search(params[:search])
+    end
+
+    
   # GET /users/:id
   def show
     @user       = User.find(params[:id])
