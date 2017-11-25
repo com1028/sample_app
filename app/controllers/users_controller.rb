@@ -5,17 +5,17 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
 
-  def index
-    #@users = User.all
-    @users = User.paginate(page: params[:page])
-  end
+  # def index
+  #   #@users = User.all
+  #   @users = User.paginate(page: params[:page])
+  # end
 
   # 追加機能11/25
-    def index
-      @users = User.where(activated: true).paginate(page: params[:page]).search(params[:search])
-    end
+  def index
+    @users = User.where(activated: true).paginate(page: params[:page]).search(params[:search])
+  end
 
-    
+
   # GET /users/:id
   def show
     @user       = User.find(params[:id])
